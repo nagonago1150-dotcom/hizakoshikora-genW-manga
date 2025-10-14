@@ -71,13 +71,23 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-shadow: 0 0 20px var(--luxury-brown);
+        filter: drop-shadow(0 0 8px rgba(139, 69, 19, 0.8))
+                drop-shadow(0 0 15px rgba(218, 165, 32, 0.6))
+                drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         animation: logoGlow 4s ease-in-out infinite alternate;
       }
 
       @keyframes logoGlow {
-        from { filter: drop-shadow(0 0 3px var(--warm-brown)); }
-        to { filter: drop-shadow(0 0 8px var(--gold-accent)); }
+        from {
+          filter: drop-shadow(0 0 8px rgba(139, 69, 19, 0.8))
+                  drop-shadow(0 0 15px rgba(218, 165, 32, 0.6))
+                  drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        to {
+          filter: drop-shadow(0 0 12px rgba(139, 69, 19, 0.9))
+                  drop-shadow(0 0 20px rgba(218, 165, 32, 0.8))
+                  drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+        }
       }
 
       /* Floating Animation for Sections */
@@ -1188,7 +1198,7 @@
             <h2 style="white-space: nowrap;">ひざ・腰のW対策、<br>あなたも一度お試しになりませんか？</h2>
             <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="price-click" style="text-decoration: none; color: inherit;">
               <p class="price">
-                <span class="trial-label">初回限定</span>
+                <span class="trial-label">定期初回限定</span>
                 <span class="special">¥1,480</span>
                 <span class="tax">（税込）</span>
               </p>
@@ -1200,7 +1210,7 @@
               <li>送料無料</li>
               <li>約1ヶ月分（30日分）</li>
               <li>国内GMP認定工場生産</li>
-              <li>購入回数縛りなし</li>
+              <li>購入回数縛りなし<sup>※4</sup></li>
             </ul>
           </div>
         </div>
@@ -1258,15 +1268,15 @@
             <article class="product-step">
               <div class="step-number">理由 03</div>
               <div class="product-content">
-                <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature03.png" alt="科学的根拠に基づいた機能性関与成分" loading="lazy"></a>
+                <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature03.png" alt="研究レビューを踏まえた商品開発" loading="lazy"></a>
                 <div class="product-info">
                   <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="product-name" style="text-decoration: none; color: inherit;">
-                    <h3>科学的根拠に基づいた<br>機能性関与成分</h3>
+                    <h3>研究レビューを踏まえた<br>商品開発</h3>
                   </a>
-                  <p class="product-concept">臨床試験データに裏付けられた実感力</p>
+                  <p class="product-concept">信頼性の高いエビデンスに基づく設計</p>
                   <ul class="product-features">
                     <li style="white-space: nowrap;">コラーゲンペプチドの<br>臨床試験データ<sup>※2</sup></li>
-                    <li style="white-space: nowrap;">現役医師も注目する成分<sup>※3</sup></li>
+                    <li style="white-space: nowrap;">専門家からの視点でも<br>関心を集めています<sup>※3</sup></li>
                     <li style="white-space: nowrap;">消費者庁に届出済の<br>機能性表示食品</li>
                     <li style="white-space: nowrap;">信頼性の高い<br>研究レビューに基づく</li>
                   </ul>
@@ -1339,8 +1349,8 @@
                   <p style="white-space: nowrap;">研究レビューに基づく<br>科学的根拠</p>
                 </li>
                 <li>
-                  <h4 style="white-space: nowrap;">現役医師も注目する成分<sup>※3</sup></h4>
-                  <p style="white-space: nowrap;">医学的視点からも<br>評価されています</p>
+                  <h4 style="white-space: nowrap;">専門家からの視点でも<br>関心を集めています<sup>※3</sup></h4>
+                  <p style="white-space: nowrap;">多角的な観点から<br>評価されています</p>
                 </li>
               </ul>
             </div>
@@ -1360,8 +1370,8 @@
                   <p>厳しい品質基準をクリア<br>毎日安心して飲める品質</p>
                 </li>
                 <li>
-                  <h4>無料薬剤師相談サービス<br>をご用意</h4>
-                  <p>ご不明な点は専門家に<br>いつでも相談できます</p>
+                  <h4>無料薬剤師相談サービス<sup>※5</sup><br>をご用意</h4>
+                  <p>商品と薬の飲み合わせなど、<br>ご不明な点は薬剤師に<br>相談することができます</p>
                 </li>
               </ul>
             </div>
@@ -1373,7 +1383,7 @@
       <section class="testimonials-section">
         <div class="container">
           <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="section-title" style="text-decoration: none; color: inherit;">
-            <h2 class="section-title" style="white-space: nowrap;">「ひざ・腰の悩みから解放された！」<br>喜びの声が続々</h2>
+            <h2 class="section-title" style="white-space: nowrap;">「ひざ・腰の悩みが軽減された！」<br>喜びの声が続々</h2>
           </a>
 
           <div class="testimonials-grid">
@@ -1432,6 +1442,7 @@
               <p class="regular-price" style="font-size: 16px; color: #888; text-decoration: line-through; margin-bottom: 8px;">通常価格 ¥6,100</p>
               <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" data-ga-event="cta_click" data-ga-label="final-price-click" style="text-decoration: none; color: inherit;">
                 <p class="price">
+                  <span class="trial-label">定期初回価格</span>
                   <span class="special">¥1,480</span>
                   <span class="tax">（税込）</span>
                 </p>
@@ -1439,7 +1450,7 @@
             </div>
 
             <a href="https://www.kenkoukazoku.co.jp/lp/dea/ad_hzks/lp_hzks01/index.html" class="cta-button large" data-ga-event="cta_click" data-ga-label="bottom">
-              ひざこしコラーゲンWで始める
+              ひざこしコラーゲンWを始める
             </a>
 
             <div class="guarantees">
@@ -1449,11 +1460,11 @@
               </div>
               <div class="guarantee-item">
                 <span class="icon">✓</span>
-                <span>購入回数縛りなし！</span>
+                <span>購入回数縛りなし！<sup>※4</sup></span>
               </div>
               <div class="guarantee-item">
                 <span class="icon">✓</span>
-                <span>無料薬剤師相談サービス付き</span>
+                <span>無料薬剤師相談サービス付き<sup>※5</sup></span>
               </div>
             </div>
           </div>
@@ -1471,13 +1482,17 @@
 
             <p style="margin-bottom: 16px;"><strong>※3 医師コメントについて:</strong> 医師のコメントは、健康家族より商品をご提供のうえ、医師個人の見解としていただいたものです。</p>
 
-            <p style="margin-bottom: 16px;"><strong>機能性表示食品について:</strong> 本品は機能性表示食品です。</p>
+            <p style="margin-bottom: 16px;"><strong>機能性表示食品について:</strong> 本品は機能性表示食品です。本品には、コラーゲンペプチドが含まれます。コラーゲンペプチドは、日常生活（歩行、階段昇降、立ち上がり、物を拾う、曲げ伸ばし）における膝の違和感を軽減する機能が報告されています。また、日常動作における一時的な腰の不快感を軽減する機能が報告されています。</p>
 
             <p style="margin-bottom: 16px;"><strong>薬機法に関する注意事項:</strong> 本品は、疾病の診断、治療、予防を目的としたものではありません。</p>
 
             <p style="margin-bottom: 16px;"><strong>食生活について:</strong> 食生活は、主食、主菜、副菜を基本に、食事のバランスを。</p>
 
             <p style="margin-bottom: 16px;"><strong>定期コースについて:</strong> 初回限定価格は定期コース適用時の価格です。2回目以降は20%OFFの4,880円(税込)でお届けします。ご解約は次回お届け予定日の10日前までにご連絡ください。</p>
+
+            <p style="margin-bottom: 16px;"><strong>※4 購入回数縛りについて:</strong> 解約・変更の場合は次回お届けの10日前までにご連絡ください。</p>
+
+            <p style="margin-bottom: 16px;"><strong>※5 無料薬剤師相談サービスについて:</strong> 当社商品に関する相談のみに限ります。</p>
 
             <p style="margin-bottom: 16px;"><strong>アレルギー情報:</strong> 原材料に豚肉、えび、かにを含みます。アレルギーをお持ちの方はお召し上がりにならないでください。</p>
 
